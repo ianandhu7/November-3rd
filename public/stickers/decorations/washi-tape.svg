@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+  <defs>
+    <pattern id="washiPattern" width="20" height="20" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#f472b6" stroke-width="2" opacity="0.3"/>
+      <circle cx="10" cy="10" r="2" fill="#e2c275" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <!-- Washi tape with torn jagged edges -->
+  <polygon points="5,5 155,7 158,15 155,25 157,35 4,33 2,23 5,14" fill="#fce7f3" opacity="0.88" />
+  <polygon points="5,5 155,7 158,15 155,25 157,35 4,33 2,23 5,14" fill="url(#washiPattern)" />
+</svg>

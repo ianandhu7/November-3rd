@@ -1,0 +1,197 @@
+/* ==========================================================================
+   A Day Made for You ♡ - Animations & Micro-Interactions
+   ========================================================================== */
+
+/* Subtle hovering / floating animation */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+/* Floating delay variants */
+.animate-float-delayed {
+  animation: floatGentle 6s ease-in-out 1.5s infinite;
+}
+
+/* Vinyl disc spinning */
+@keyframes spinVinyl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-vinyl {
+  animation: spinVinyl 4s linear infinite;
+}
+
+.animate-spin-vinyl.paused {
+  animation-play-state: paused;
+}
+
+/* Shimmer stardust effect */
+@keyframes starlightShimmer {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.15);
+  }
+}
+
+.animate-shimmer {
+  animation: starlightShimmer 3s ease-in-out infinite;
+}
+
+/* Pulse heart */
+@keyframes heartPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.18);
+  }
+  40% {
+    transform: scale(1.05);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+}
+
+.animate-heart-pulse {
+  animation: heartPulse 1.8s ease-in-out infinite;
+}
+
+/* Camera Shutter Flash */
+@keyframes cameraFlash {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.95;
+    background: #ffffff;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.camera-flash-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  border-radius: inherit;
+}
+
+.camera-flash-overlay.active {
+  animation: cameraFlash 0.5s ease-out forwards;
+}
+
+/* 3D Envelope perspective */
+.envelope-3d-scene {
+  perspective: 1200px;
+}
+
+.envelope-flap-3d {
+  transform-origin: top center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.envelope-flap-3d.open {
+  transform: rotateX(180deg);
+}
+
+/* Wax seal hover glow */
+.wax-seal-btn {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.wax-seal-btn:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+.wax-seal-btn:active {
+  transform: scale(0.96);
+}
+
+/* Typewriter blink */
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: currentColor;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blinkCursor 0.8s infinite;
+}
+
+/* Tape peel effect on hover */
+.tilt-on-hover {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.tilt-on-hover:hover {
+  transform: translateY(-6px) rotate(0deg) scale(1.02);
+  z-index: 20;
+}
+
+/* Vintage Sticker playful bounce/wiggle */
+@keyframes stickerWiggle {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-5deg) scale(1.08);
+  }
+  75% {
+    transform: rotate(5deg) scale(1.08);
+  }
+}
+
+.vintage-sticker:hover {
+  animation: stickerWiggle 0.6s ease-in-out;
+}
+
+/* Subtle gold gleam */
+@keyframes goldGleam {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2) drop-shadow(0 0 8px var(--color-gold));
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.gold-gleam {
+  animation: goldGleam 3s infinite ease-in-out;
+}
+

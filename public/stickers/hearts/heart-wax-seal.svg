@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="waxGrad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ba2b44" />
+      <stop offset="60%" stop-color="#801026" />
+      <stop offset="100%" stop-color="#4e0716" />
+    </radialGradient>
+    <filter id="waxShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#2d020b" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#fff" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <!-- Irregular organic wax puddle edge -->
+  <path d="M60,10 C75,9 85,15 95,25 C107,35 112,48 110,65 C108,80 98,95 85,105 C70,113 50,114 35,108 C20,100 10,88 8,70 C6,52 14,35 25,22 C38,8 48,11 60,10 Z" 
+        fill="url(#waxGrad)" filter="url(#waxShadow)" />
+  <!-- Inner rim impression -->
+  <circle cx="60" cy="62" r="38" fill="none" stroke="#5a0b1b" stroke-width="3" opacity="0.6" />
+  <circle cx="60" cy="60" r="38" fill="none" stroke="#d44a65" stroke-width="2" opacity="0.4" />
+  <!-- Monogram Heart Stamp inside -->
+  <path d="M60,78 C42,62 32,51 32,41 C32,33 38,27 46,27 C51,27 56,30 60,35 C64,30 69,27 74,27 C82,27 88,33 88,41 C88,51 78,62 60,78 Z" 
+        fill="#5c0919" opacity="0.75" />
+  <path d="M60,77 C42,61 33,50 33,41 C33,34 39,28 46,28 C51,28 56,31 60,36 C64,31 69,28 74,28 C81,28 87,34 87,41 C87,50 78,61 60,77 Z" 
+        fill="#9c1c34" opacity="0.8" />
+</svg>

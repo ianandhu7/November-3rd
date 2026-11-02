@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-burgundy" data-theme="burgundy">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2368151D'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Day Made for You ♡ ✦ A Little Birthday Surprise</title>
+    <meta name="description" content="A Day Made for You ♡ — November 3rd — a special day, because it's your birthday! I made this little website just for you, with some pictures, memories, and a few words I wanted to share." />
+    
+    <!-- Instant Theme Restore to prevent FOUC -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('museum_of_us_theme');
+          var theme = (saved === 'midnight') ? 'midnight' : 'burgundy';
+          document.documentElement.className = 'theme-' + theme;
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Google Fonts: Playfair Display, Sacramento, DM Sans, DM Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sacramento&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

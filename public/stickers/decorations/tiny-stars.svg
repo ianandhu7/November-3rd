@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <filter id="star-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <g filter="url(#star-shadow)">
+    <!-- Main 4-point sparkle star with white outline -->
+    <path d="M30 4 Q30 24 10 30 Q30 36 30 56 Q30 36 50 30 Q30 24 30 4 Z" fill="#D8B58A" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="30" cy="30" r="3" fill="#FFFFFF"/>
+    <!-- Small accent sparkle -->
+    <path d="M48 10 Q48 16 42 18 Q48 20 48 26 Q48 20 54 18 Q48 16 48 10 Z" fill="#FBBF24" stroke="#FFFFFF" stroke-width="1.5"/>
+    <path d="M12 44 Q12 48 8 50 Q12 52 12 56 Q12 52 16 50 Q12 48 12 44 Z" fill="#E11D48" stroke="#FFFFFF" stroke-width="1.5"/>
+  </g>
+</svg>

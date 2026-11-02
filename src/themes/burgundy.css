@@ -1,0 +1,85 @@
+/* ==========================================================================
+   THEME A — BURGUNDY ROMANCE
+   Visual Style: Vintage romantic scrapbook, cream paper textures,
+   handwritten captions, polaroids, decorative flowers, ribbons & bows.
+   ========================================================================== */
+
+:root.theme-burgundy,
+body.theme-burgundy,
+.theme-burgundy,
+[data-theme="burgundy"] {
+  /* Core Theme Palette */
+  --color-bg: #68151D;
+  --color-bg-dark: #430D14;
+  --color-paper: #F4E8D5;
+  --color-paper-soft: #E9D7C0;
+  --color-gold: #D8B58A;
+  --color-accent: #A84E53;
+  --color-text: #F7EADB;
+
+  /* Semantic Extended Shades */
+  --color-bg-base: #430D14;
+  --color-bg-gradient: radial-gradient(circle at 50% 12%, #68151D 0%, #430D14 60%, #29080c 100%);
+  --color-bg-ambient: radial-gradient(ellipse at 85% 15%, rgba(168, 78, 83, 0.3) 0%, transparent 60%),
+                      radial-gradient(ellipse at 15% 85%, rgba(216, 181, 138, 0.18) 0%, transparent 55%);
+
+  /* Typography Colors */
+  --color-text-primary: #F7EADB;
+  --color-text-secondary: rgba(247, 234, 219, 0.78);
+  --color-text-muted: rgba(247, 234, 219, 0.55);
+  --color-text-dark: #380a10;
+  --color-text-dark-muted: #5e1c25;
+  --color-text-ink: #2b070c;
+
+  /* Surfaces & Glassmorphism */
+  --color-surface-glass: rgba(67, 13, 20, 0.72);
+  --color-surface-glass-border: rgba(216, 181, 138, 0.28);
+  --color-surface-glass-hover: rgba(85, 17, 26, 0.88);
+  
+  /* Paper & Polaroid Details */
+  --color-paper-border: #D8B58A;
+  --color-paper-edge: #E9D7C0;
+  --color-polaroid-bg: #F4E8D5;
+  --color-polaroid-border: #E9D7C0;
+  --color-polaroid-text: #380a10;
+
+  /* Accents & Embellishments */
+  --color-tape: rgba(233, 215, 192, 0.82);
+  --color-tape-border: rgba(216, 181, 138, 0.5);
+  --color-paperclip: #D8B58A;
+  --color-wax-seal: #801420;
+  --color-wax-seal-shadow: 0 10px 24px rgba(35, 6, 11, 0.7);
+
+  /* Shadows & Elevations */
+  --shadow-elevation: 0 16px 40px rgba(35, 6, 11, 0.55);
+  --shadow-paper: 0 12px 32px rgba(35, 6, 11, 0.45);
+  --shadow-polaroid: 0 14px 34px rgba(35, 6, 11, 0.4);
+  --glow-accent: 0 0 25px rgba(216, 181, 138, 0.35);
+
+  /* Compatibility Aliases for Components */
+  --theme-bg-base: var(--color-bg-base);
+  --theme-bg-gradient: var(--color-bg-gradient);
+  --theme-bg-ambient: var(--color-bg-ambient);
+  --theme-surface-glass: var(--color-surface-glass);
+  --theme-surface-glass-border: var(--color-surface-glass-border);
+  --theme-surface-glass-hover: var(--color-surface-glass-hover);
+  --theme-surface-paper: var(--color-paper);
+  --theme-surface-paper-border: var(--color-paper-soft);
+  --theme-text-primary: var(--color-text-primary);
+  --theme-text-secondary: var(--color-text-secondary);
+  --theme-text-muted: var(--color-text-muted);
+  --theme-text-dark: var(--color-text-dark);
+  --theme-text-dark-muted: var(--color-text-dark-muted);
+  --theme-accent-gold: var(--color-gold);
+  --theme-accent-gold-hover: #e6c8a3;
+  --theme-accent-gold-glow: rgba(216, 181, 138, 0.4);
+  --theme-accent-rose: var(--color-accent);
+  --theme-wax-seal: var(--color-wax-seal);
+  --theme-wax-seal-shadow: var(--color-wax-seal-shadow);
+  --theme-card-shadow: var(--shadow-elevation);
+  --theme-polaroid-shadow: var(--shadow-polaroid);
+  --theme-glow: var(--glow-accent);
+  --theme-tag-bg: rgba(168, 78, 83, 0.25);
+  --theme-tag-text: #F7EADB;
+  --theme-tag-border: rgba(216, 181, 138, 0.4);
+}

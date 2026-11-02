@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="stemGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a7c59" />
+      <stop offset="100%" stop-color="#2d5038" />
+    </linearGradient>
+    <radialGradient id="roseRed" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#f87171" />
+      <stop offset="50%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#881337" />
+    </radialGradient>
+  </defs>
+  <!-- Stem & Leaves -->
+  <path d="M50,55 Q53,75 48,95" stroke="url(#stemGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M50,70 Q65,65 68,75 Q55,80 50,70 Z" fill="#3f6d4d"/>
+  <path d="M49,78 Q32,75 30,83 Q42,86 49,78 Z" fill="#345a3f"/>
+  <!-- Rose Blossom Petals -->
+  <path d="M50,20 C35,20 28,32 32,45 C35,52 45,58 50,58 C55,58 65,52 68,45 C72,32 65,20 50,20 Z" fill="url(#roseRed)"/>
+  <path d="M42,28 C45,24 55,24 58,28 C64,34 60,44 50,48 C40,44 36,34 42,28 Z" fill="#991b1b"/>
+  <path d="M46,32 C48,30 52,30 54,32 C57,36 54,42 50,44 C46,42 43,36 46,32 Z" fill="#ef4444"/>
+</svg>
